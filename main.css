@@ -1,0 +1,101 @@
+@font-face{
+    font-family: myfont;
+    src:url(fonts/batmfa__.ttf);
+}
+
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.main-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows:130px 100px auto auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: lightseagreen;
+    font-size: 4em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.options-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.options-header > button{
+    background-color: lightskyblue;
+    width: 140px;
+    height: 45px;
+    border: 1px solid grey;
+    color: black;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.options-header > button:nth-child(3){
+    width: 120px;
+    height: 45px;
+    background-color: aquamarine;
+}
+
+.main-content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    margin-top: 40px;
+}
+
+.box{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 5em;
+    color: lightslategrey;
+}
+
+.box > p{
+    color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    width: 100px;
+    height: 100px;
+    
+}
+
+#results-container{
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
